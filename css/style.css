@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+   
+    background-image: url(../img/belgravia-richmond-weave-texture-white-9107-wallpaper-roll-or-a4-sample-a4-sample-69211-p.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+
+    
+}
+.innermain {
+    max-width: 1080px;
+    min-width: 600px;
+    width: 80%;
+    display: block;
+
+    margin: 0 auto;
+    position: relative;
+    top: 7rem;
+    overflow: visible;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: auto;
+    width: 80%;
+    max-width: 1080px;
+    min-width: 600px;
+    transition: 0.3s;
+    background-image: url(../img/header_bg.png);
+    background-size: cover;
+    height: 7rem;
+    overflow: visible;
+}
+.stickynavbar {
+    height: 3rem !important;
+    display: flex;
+}
+.stickynavbar > .top_head > .logo{
+    margin-top: 0.4rem !important;
+    width: 7rem !important;
+    height: 2.2rem !important;
+}
+
+.logo {
+    width: 8rem;
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    transition: all .3s;
+}
+img.logo_img {
+    width: 100%;
+    height: 100%;
+}
+.navbar {
+    margin-left: 11%;
+    width: 100%;
+    max-width: 1080px;
+    min-width: 600px;
+    position: absolute;
+    bottom: 8px;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.navbar ul li a {
+    padding: 0.575em 1.150em;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(8 27 58 / 40%);
+    backdrop-filter: blur(5px);
+    margin: 0 0.5rem;
+    border-radius: 2px;
+}
+.navbar ul li a:hover{
+    background-color: rgb(73 107 163 / 40%);
+}
+.navbar ul li a:focus{
+    background-color: rgb(73 107 163 / 40%);
+}
+/* Innder Body css side bar or content area  */
+.innerbody {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 1080px;
+    min-width: 600px;
+    display: inline-block;
+}
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3rem;
+    float: left;
+    width: 25%;
+    transition: all 0.3s;
+    height: 100vh;
+    background-color: #172336;
+}
+
+.contentarea {
+    padding: 30px;
+    float: right;
+    width: 75%;
+    min-height: 100vh;
+    background-color: #edede7;
+    text-align: justify;
+}
+
+/* Side navbar  */
+nav.sidenavbar {
+    padding: 10px;
+}
+.sidenavbar span {
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: rgb(142 163 163 / 30%);
+    color: white;
+}
+ul.sidemenu {
+    overflow: hidden;
+    display: block;
+    margin-top: 0.4rem;
+}
+
+.sidemenu li a {
+    margin-left: 0.75rem;
+    margin-top: 0.2rem;
+    background-color: aliceblue;
+    width: 94%;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 8px;
+    color: currentColor;
+}
+ul.sidemenu li i {
+    margin-left: auto;
+    margin-right: 4px;
+    padding: 4px;
+    /* background-color: aliceblue; */
+    float: right;
+}
+ul.sidesubmenu {
+    display: none;
+}
+.sidesubmenu li a {
+    margin-left: 1.25rem;
+    margin-top: 0.2rem;
+    background-color: aliceblue;
+    width: 90.5%;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 8px;
+    color: currentColor;
+}
+
+.sidemenu li a:focus{
+    background-color: rgb(183, 202, 219);
+
+}
+.sidemenu li a:hover{
+    background-color: rgb(183, 202, 219);
+}
+/* drop down menu  */
+.action_btn{
+    color:#172336;
+    background-color: #edede7;
+    border: 1px solid rgb(142 163 163 / 30%);
+    padding: 2px 10px;
+    border-radius: 15%;
+    display: none;
+    cursor: pointer;
+    width: 2.3rem;
+    height: 1.9rem;
+    text-align: center;
+}
+
+.menu_btn{
+    padding: 20px;
+    transition: all 0.3s;
+}
+.dropdownmenu{
+    width: 100%;
+    position:absolute;
+    background-color: #172336a6;
+    
+    backdrop-filter: blur(5px);
+    padding: 5px;
+    
+    border-radius: 10px;
+    height: 0;
+    display: none;
+
+    transition: all 0.3s ;
+    overflow: hidden;
+    
+
+}
+.dropdownmenu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.dropdownmenu ul li a{
+    padding: 0.575em 1.150em;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(8 27 58 / 40%);
+    backdrop-filter: blur(5px);
+    margin: 0 0.5rem;
+    border-radius: 2px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    
+}
+.dropdownmenu ul li a:hover{
+    background-color: rgb(73 107 163 / 40%);
+}
+.open{
+    display: none;
+    opacity: 0 !important;
+    height: 230px;
+   
+}
+/* RESPONSIVE CSS */
+@media  screen and (max-width:600px) {
+    .innermain {
+        max-width: 600px;
+        min-width: initial;
+        width: 100%;
+        display: block;
+    
+        margin: 0 auto;
+        position: relative;
+        top: 7rem;
+        overflow: visible;
+    }
+    .innerbody {
+        width: 100%;
+        margin-top: 20px;
+        max-width: 600px;
+        min-width: initial;
+        display: inline-block;
+    }
+    .sidebar{
+        display: none !important;
+    }
+    .contentarea{
+        width: 100% !important;
+    }
+    .header{
+        width: 100%;
+        max-width: 600px;
+        min-width: initial;
+        height: 5rem;
+    }
+    .navbar{
+        margin-left: 0;
+    }
+    .navbar nav{
+        display: none;
+    }
+    .top_head{
+        display: flex;
+        justify-content: space-between;
+    }
+    .stickynavbar{
+        flex-direction: column;
+    }
+    .action_btn{
+        display: block;
+    }
+    .dropdownmenu{
+        display: block;
+        opacity: 0;
+        
+    }
+    .open{
+        display: block;
+        opacity: 1 !important;
+        height: 230px;
+        top: 5rem;
+        transition: all 0.3s;
+       
+    }
+
+}
